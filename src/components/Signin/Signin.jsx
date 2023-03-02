@@ -85,7 +85,7 @@ const Signin = () => {
              type="text"
               placeholder='Enter Firstname' 
               value={formValues.username}
-              className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+              className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.username}</p>
@@ -98,7 +98,7 @@ const Signin = () => {
              type="text"
              value={formValues.email}
              placeholder='Enter Email Address'
-              className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+              className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.email}</p>
@@ -111,7 +111,7 @@ const Signin = () => {
              type="text"
              value={formValues.password}
              placeholder='Enter Password'
-             className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+             className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
           </div>
           <center>
           <p className="text-red-500">{formErrors.password}</p>

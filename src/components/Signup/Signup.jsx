@@ -104,7 +104,7 @@ const Signup = () => {
                type="text"
                 placeholder='Enter Firstname' 
                 value={formValues.firstname}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.firstname}</p>
@@ -116,7 +116,7 @@ const Signup = () => {
                type="text"
                 placeholder='Enter Lastname' 
                 value={formValues.lastname}
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.lastname}</p>
@@ -129,7 +129,7 @@ const Signup = () => {
                type="text"
                value={formValues.email}
                placeholder='Enter Email Address'
-                className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+                className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.email}</p>
@@ -142,7 +142,7 @@ const Signup = () => {
                type="text"
                value={formValues.password}
                placeholder='Enter Password'
-               className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+               className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.password}</p>
@@ -154,18 +154,14 @@ const Signup = () => {
                type="text"
                value={formValues.confirmpassword}
                placeholder='Enter Password'
-               className='w-[100%] border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
+               className='w-[100%] text-sm border border-green-900 outline-none rounded-xl h-10 md:w-[50%]'/>
             </div>
             <center>
             <p className="text-red-500">{formErrors.confirmpassword}</p>
             </center>
-            <div className='flex justify-start items-center m-auto mt-2 w-[100%] md:w-[50%] '>
-              <p className='text-xs text-blue-700 '>By registering,you agree to our Terms.
-              Check box</p>
-              <img src={Checkbox} alt="pic" className='w-3 bg-red-700 ' />
-              
-              
-             
+            <div className='flex justify-start items-center m-auto mt-2 w-[100%] gap-x-1 md:w-[50%] '>
+              <p className='text-xs text-blue-700 '>Agree to our <span className='text-red-500'>Terms.</span>Check box</p>
+              <img src={Checkbox} alt="pic" className='w-3' />
             </div>
             <center className='mt-5'>
               <button type='submit' className='px-8 py-2 mb-4 border outline-none bg-green-900 w-[100%] rounded-2xl text-white text-xl md:w-[50%]'>Sign Up</button>
